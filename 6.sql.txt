@@ -1,3 +1,1 @@
-SELECT Customer.FirstName || " " || Customer.LastName AS "Customer Name",Country,InvoiceId,InvoiceDate,BillingCountry FROM Invoice
-JOIN Customer
-ON Customer.CustomerId == Invoice.CustomerId WHERE Customer.Country IS 'Brazil'
+SELECT * FROM Invoice WHERE BillingCountry == 'Brazil'
