@@ -1,0 +1,2 @@
+SELECT COUNT (TrackId) ,Name FROM  Playlist JOIN PlaylistTrack ON PlaylistTrack.PlaylistId == Playlist.PlaylistId
+GROUP BY Name
